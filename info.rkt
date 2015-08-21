@@ -16,6 +16,7 @@
   '("cover"
     "rackunit-lib"
     "racket-doc"
+    "scribble-lib"
     "doc-coverage"))
 
 
