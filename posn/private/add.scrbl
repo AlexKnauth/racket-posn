@@ -15,8 +15,8 @@
     (posn-subtract (posn 2 3) (posn 5 2))
 ]}
 
-@defproc[(posn-negate [posn posn?]) posn?]{
-  Returns the negation @racket[posn], flipping the signs of both it's x and y parts.
+@defproc[(posn-negate [a-posn posn?]) posn?]{
+  Returns the negation @racket[a-posn], flipping the signs of both it's x and y parts.
   @posn-examples[
     (posn-negate (posn 5 -1))
 ]}
