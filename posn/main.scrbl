@@ -15,3 +15,4 @@ source code: @url["https://github.com/jackfirth/racket-posn"]
 
 @scribble-include/no-subsection["private/base.scrbl"]
 @scribble-include/no-subsection["private/add.scrbl"]
+@scribble-include/no-subsection["private/multiply.scrbl"]
