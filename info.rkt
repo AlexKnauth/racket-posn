@@ -23,4 +23,5 @@
   '("posn/main.scrbl"
     "posn/private/add.scrbl"
     "posn/private/base.scrbl"
-    "posn/private/subtract.scrbl"))
+    "posn/private/multiply.scrbl"
+    "posn/private/scale.scrbl"))
