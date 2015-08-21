@@ -17,3 +17,10 @@
     "rackunit-lib"
     "racket-doc"
     "doc-coverage"))
+
+
+(define test-omit-paths
+  '("posn/main.scrbl"
+    "posn/private/add.scrbl"
+    "posn/private/base.scrbl"
+    "posn/private/subtract.scrbl"))
