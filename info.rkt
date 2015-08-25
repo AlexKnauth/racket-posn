@@ -9,6 +9,7 @@
 
 (define deps
   '("base"
+    "sweet-exp"
     "fancy-app"))
 
 
