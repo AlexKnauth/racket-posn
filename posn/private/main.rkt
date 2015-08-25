@@ -4,6 +4,7 @@ require
   "add.rkt"
   "base.rkt"
   "multiply.rkt"
+  "rotate.rkt"
   "scale.rkt"
 
 provide
@@ -11,4 +12,5 @@ provide
     "add.rkt"
     "base.rkt"
     "multiply.rkt"
+    "rotate.rkt"
     "scale.rkt"
