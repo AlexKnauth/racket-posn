@@ -32,3 +32,13 @@
   @posn-examples[
     (posn-rotate-origin-ccw 70 (posn 1 1))
 ]}
+
+@defproc[(posn-rotate-ccw [center-posn posn?]
+                          [degrees (between/c 0 360)]
+                          [a-posn posn?])
+         posn?]{
+  Returns @racket[a-posn] rotated @racket[degrees] counter
+  clockwise around @racket[center-posn].
+  @posn-examples[
+    (posn-rotate-ccw (posn 20 20) 45 (posn 22 21))
+]}

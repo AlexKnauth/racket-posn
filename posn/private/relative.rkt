@@ -10,8 +10,10 @@ require "base.rkt"
         "add.rkt"
 
 module+ test
-  require rackunit
-          "rotate.rkt"
+  require racket/lazy-require
+          rackunit
+  lazy-require
+    "rotate.rkt" (posn-rotate-origin-ccw-90)
 
 
 (define (posn-transform-relative new-origin posn-transform a-posn)

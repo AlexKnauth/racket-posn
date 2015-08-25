@@ -8,12 +8,14 @@ provide
     posn-rotate-origin-ccw-180 (-> posn? posn?)
     posn-rotate-origin-ccw-270 (-> posn? posn?)
     posn-rotate-origin-ccw (-> degrees? posn? posn?)
+    posn-rotate-ccw (-> posn? degrees? posn? posn?)
 
 require fancy-app
         racket/match
         racket/math
         "base.rkt"
         "degrees.rkt"
+        "relative.rkt"
 
 module+ test
   require rackunit
@@ -74,3 +76,9 @@ module+ test
                 (posn-rotate-origin-ccw-270 (posn 1 2)))
   (check-posn=? (posn-rotate-origin-ccw 45 (posn 1 1))
                 (posn 0 (sqrt 2)))
+
+
+(define (posn-rotate-ccw center-posn angle a-posn)
+  (posn-transform-relative center-posn
+                           (posn-rotate-origin-ccw angle _)
+                           a-posn))
