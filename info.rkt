@@ -8,7 +8,8 @@
 
 
 (define deps
-  '("base"
+  '("scribble-lib"
+    "base"
     "sweet-exp"
     "fancy-app"))
 
